@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size:calc(0.3vw + 0.5vmin);;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -54,7 +54,7 @@ body {
   font-weight: 500;
   padding: 2rem;
   background-color: #495057;
-  border-radius: 100px;
+  border-radius: 10rem;
 }
 
 img {
@@ -102,17 +102,17 @@ h4 {
 progress {
   -webkit-appearance: none;
   width: 100%;
-  height: 12px;
+  height: 1.2rem;
   grid-column: 1 / -1;
 }
 
 ::-webkit-progress-bar {
   background-color: var(--color-medium);
-  border-radius: 100px;
+  border-radius: 10rem;
 }
 ::-webkit-progress-value {
   background-color: var(--color-theme);
-  border-radius: 100px;
+  border-radius: 10rem;
 }
 
 .btn {
@@ -120,11 +120,11 @@ progress {
   font-family: inherit;
   color: inherit;
   font-size: 2rem;
-  border: 2px solid var(--color-dark);
+  border: 0.2rem solid var(--color-dark);
   background-color: var(--color-dark);
   padding: 1.2rem 2.4rem;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: 0.3s;
 }
 
@@ -158,12 +158,12 @@ progress {
 
 .btn-option.correct {
   background-color: var(--color-theme);
-  border: 2px solid var(--color-theme);
+  border: 0.2rem solid var(--color-theme);
   color: var(--color-light);
 }
 .btn-option.wrong {
   background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
+  border: 0.2rem solid var(--color-accent);
   color: var(--color-darkest);
 }
 
@@ -174,7 +174,7 @@ progress {
 .result {
   background-color: var(--color-theme);
   color: var(--color-light);
-  border-radius: 100px;
+  border-radius: 10rem;
   text-align: center;
   padding: 2rem 0;
   font-size: 2rem;
@@ -184,7 +184,7 @@ progress {
 
 .result span {
   font-size: 2.2rem;
-  margin-right: 4px;
+  margin-right: 0.4rem;
 }
 
 .highscore {
@@ -208,20 +208,20 @@ progress {
   float: left;
   font-size: 1.8rem;
   color: var(--color-medium);
-  border: 2px solid var(--color-dark);
+  border: 0.2rem solid var(--color-dark);
   padding: 1.35rem 2.8rem;
-  border-radius: 100px;
+  border-radius: 10rem;
 }
 
 /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
-  width: 50px;
-  height: 24px;
+  width: 5rem;
+  height: 2.4rem;
   background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
       50%,
     radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
     radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
-  background-size: calc(100% / 3) 12px;
+  background-size: calc(100% / 3) 1.2rem;
   background-repeat: no-repeat;
   animation: loader 1s infinite linear;
 }
