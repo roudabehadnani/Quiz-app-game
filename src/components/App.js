@@ -56,7 +56,7 @@ function App() {
   const maxPossiblePoints = questions.reduce((prev, cur) => prev + cur.points, 0);
 
   useEffect(() => {
-    fetch("http://localhost:3001/questions")
+    fetch("https://question-app-json-default-rtdb.firebaseio.com/questions.json")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
